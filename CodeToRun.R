@@ -1,7 +1,8 @@
 
 # install.packages("renv") # if not already installed, install renv from CRAN
-# renv::restore() # this should prompt you to install the various packages required for the study
-# renv::activate()
+renv::activate()
+renv::restore() # this should prompt you to install the various packages required for the study
+
 
 # packages -----
 # load the below packages 
@@ -53,6 +54,6 @@ source(here("RunAnalysis.R"))
 
 # Review results -----
 CohortDiagnostics::preMergeDiagnosticsFiles(dataFolder = here("Results"))
-CohortDiagnostics::launchDiagnosticsExplorer(dataFolder = here("Results"))
+#CohortDiagnostics::launchDiagnosticsExplorer(dataFolder = here("Results"))
 
 
