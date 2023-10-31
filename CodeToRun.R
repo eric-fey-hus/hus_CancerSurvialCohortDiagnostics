@@ -52,8 +52,12 @@ cohortTableStem<-"..."
 # Run analysis ----
 source(here("RunAnalysis.R"))
 
-# Review results -----
+# Generate results for review -----
 CohortDiagnostics::preMergeDiagnosticsFiles(dataFolder = here("Results"))
-#CohortDiagnostics::launchDiagnosticsExplorer(dataFolder = here("Results"))
 
-
+# Review results -----
+# if you want to review the results locally: 
+# Download the following repo, open the project file and run renv::restore:
+# https://github.com/oxford-pharmacoepi/CancerExtrapolationDiagnostics
+# Put the premerge file from cohortdiagnostics and place it into the data folder of this repo.
+# Click run app in top right of this window. Your results should open up to view.
