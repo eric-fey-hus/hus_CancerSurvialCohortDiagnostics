@@ -17,6 +17,7 @@ library(stringr)
 
 # database metadata and connection details -----
 # The name/ acronym for the database
+# PLEASE USE DATABASE ACROMYN DO NOT USE SOMETHING GENERIC LIKE OMOP, CDM etc
 db.name<-"..."
 
 # database connection details
