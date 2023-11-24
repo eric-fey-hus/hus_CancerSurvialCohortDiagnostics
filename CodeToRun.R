@@ -1,6 +1,6 @@
 
 # install.packages("renv") # if not already installed, install renv from CRAN
-renv::activate()
+#renv::activate()
 renv::restore() # this should prompt you to install the various packages required for the study
 
 
@@ -17,6 +17,7 @@ library(stringr)
 
 # database metadata and connection details -----
 # The name/ acronym for the database
+# PLEASE USE DATABASE ACROMYN DO NOT USE SOMETHING GENERIC LIKE OMOP, CDM etc
 db.name<-"..."
 
 # database connection details
@@ -52,8 +53,12 @@ cohortTableStem<-"..."
 # Run analysis ----
 source(here("RunAnalysis.R"))
 
-# Review results -----
+# Generate results for review -----
 CohortDiagnostics::preMergeDiagnosticsFiles(dataFolder = here("Results"))
-#CohortDiagnostics::launchDiagnosticsExplorer(dataFolder = here("Results"))
 
-
+# Review results -----
+# if you want to review the results locally: 
+# Download the following repo, open the project file and run renv::restore:
+# https://github.com/oxford-pharmacoepi/CancerExtrapolationDiagnostics
+# Put the premerge file from cohortdiagnostics and place it into the data folder of this repo.
+# Click run app in top right of this window. Your results should open up to view.

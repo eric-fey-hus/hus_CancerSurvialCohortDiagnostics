@@ -2,6 +2,14 @@
 
 library(dplyr)
 library(here)
+
+# place results files in to align folder
+# remove other zipped files from filter folder (apart from CPRD gold/aurum)
+# removed zip files from for shiny folder
+# run align argument
+# run filter arugument
+# run premerge argument
+
 # This runs to make all cohort numbers consistent as some data partners can only run certain conditions
 # naming dataframe (namingdf) is a dataframe of 2 columns containing the cohort_ID and the cohort name for the current
 # cohort diagnostics outputs you want to convert 
