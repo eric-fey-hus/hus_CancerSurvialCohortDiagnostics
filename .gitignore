@@ -6,3 +6,4 @@ Results/*
 .Rproj.user/*
 postgresql-42.2.18.jar
 .Rproj.user
+CodeToRunLocal.R
