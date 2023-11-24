@@ -17,7 +17,7 @@ library(stringr)
 
 # database metadata and connection details -----
 # The name/ acronym for the database
-db.name<-"GOLD2022_TEST"
+db.name<-"GOLD2022_1"
 
 # database connection details
 server     <- Sys.getenv("DB_SERVER_cdm_gold_202207")
@@ -48,7 +48,7 @@ results_database_schema<-"results"
 # stem for tables to be created in your results schema for this analysis
 # You can keep the above names or change them
 # Note, any existing tables in your results schema with the same name will be overwritten
-cohortTableStem<-"DN_wp2_CD_GOLD_TEST"
+cohortTableStem<-"DN_wp2_CD_GOLD2T"
 
 # Run analysis ----
 source(here("RunAnalysis.R"))
