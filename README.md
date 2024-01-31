@@ -1,5 +1,8 @@
 CohortDiagnostics for Cancer Codelists
 ========================================================================================================================================================
+
+## This is a fork (eric-fey-hus/hus_CancerSurvivalCohortDiagnistics) for HUS use in Acamedic. 
+
 ## R version
 1) You must have R version 4.2.X to run this study script. If you have R versions 4.3.X or higher this script will not work so please downgrade your R version
 
